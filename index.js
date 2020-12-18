@@ -32,8 +32,8 @@ var knexDest = knex({
 		host : process.env.DEST_DB_HOST,
 		port: process.env.DEST_DB_PORT,
 		user : process.env.DEST_DB_USER,
-		password : process.env.SOURCE_DB_PASS,
-		database : `sub_${process.env.SOURCE_DB_NAME}` 
+		password : process.env.DEST_DB_PASS,
+		database : process.env.DEST_DB_NAME
 	}
 });
 
