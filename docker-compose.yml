@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  db:
+    image: postgres 
+    ports:
+      - "5433:5432"
+    restart: always
+    env_file:
+      - .env.docker
